@@ -14,13 +14,13 @@ namespace Composition
             player.GameObject.MoveTo(new Vector3(10, 20, 0));
             enemy.GameObject.MoveTo(new Vector3(20, 10, 0));
 
-            player.Shoot();
+            player.Gun.Shoot();
             enemy.Health.TakeDamage(30);
 
-            enemy.Shoot();
+            enemy.Gun.Shoot();
             player.Health.TakeDamage(25);
             
-            enemy.Shoot();
+            enemy.Gun.Shoot();
             obstacle.Destroy();
         }
     }
